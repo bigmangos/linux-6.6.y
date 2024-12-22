@@ -127,8 +127,8 @@
 		compatible = "pwm-fan";
 		pwms = <&pwm12 0 40000 0>;
 		fan-supply = <&dc_12v>;
-		//interrupt-parent = <&gpio0>;
-		//interrupts = <20 IRQ_TYPE_EDGE_FALLING>;
+		interrupt-parent = <&gpio3>;
+		interrupts = <11 IRQ_TYPE_EDGE_FALLING>;
 		pulses-per-revolution = <2>;
         cooling-levels = <0 50 100 150 200 255>;
         rockchip,temp-trips = <
